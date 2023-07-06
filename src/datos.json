@@ -1,0 +1,20 @@
+{
+    "places": [
+      {
+        "id":1,
+        "name": "Santa Clara",
+        "description": "The Eiffel Tower is a wrought-iron lattice tower located on the Champ de Mars in Paris, France.",
+        "latitude": 48.8584,
+        "longitude": 2.2945,
+        "image": "https://www.el19digital.com/files/articulos/199633.jpg"
+      },
+      {
+        "id":2,
+        "name": "Great Wall of China",
+        "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
+        "latitude": 40.4319,
+        "longitude": 116.5704,
+        "image": "https://example.com/images/great-wall.jpg"
+      }
+    ]
+}
