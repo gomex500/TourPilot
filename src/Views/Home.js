@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {View, Text, FlatList, TouchableOpacity, StyleSheet, Image} from 'react-native'
 import Data from '../datos.json';
-import axios from 'axios';
+// import axios from 'axios';
 
 
 const Home = ({navigation}) => {
@@ -30,6 +30,12 @@ const Home = ({navigation}) => {
             )}
         keyExtractor={(item) => item.id?.toString()}
      />
+     <View style={styles.container2}>
+      <TouchableOpacity style={styles.button}>
+        <Text>+</Text>
+      </TouchableOpacity>
+    </View>
+
     </View>
   );
 };
@@ -38,6 +44,19 @@ const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: '#474747',
+    },
+    container2: {
+      position: 'absolute',
+      bottom: 16,
+      right: 16,
+    },
+    button: {
+      backgroundColor: 'blue',
+      borderRadius: 30,
+      width: 60,
+      height: 60,
+      justifyContent: 'center',
+      alignItems: 'center',
     },
 });
 
