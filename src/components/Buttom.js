@@ -1,13 +1,11 @@
 import React from "react";
 import {View, Text, TouchableOpacity} from 'react-native'
 
-const Buttom = ({stylesV, stylesB, text, onPress}) =>{
+const Buttom = ({styles, text, onPress}) =>{
     return(
-        <View style={stylesV}>
-            <TouchableOpacity style={stylesB} onPress={onPress}>
-                <Text>{text}</Text>
-            </TouchableOpacity>
-        </View>
+        <TouchableOpacity style={styles} onPress={onPress}>
+            <Text>{text}</Text>
+        </TouchableOpacity>
     )
 }
 

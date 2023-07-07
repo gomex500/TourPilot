@@ -31,13 +31,13 @@ const Home = ({navigation}) => {
             )}
         keyExtractor={(item) => item.id?.toString()}
      />
-      <Buttom
-        stylesV={styles.container2}
-        stylesB={styles.button}
-        text={'Add'}
-        onPress={console.log('hola')}
-      />
-
+      <View style={styles.container2}>
+        <Buttom
+          styles={styles.button}
+          text={'Add'}
+          onPress={console.log('hola')}
+        />
+      </View>
     </View>
   );
 };
