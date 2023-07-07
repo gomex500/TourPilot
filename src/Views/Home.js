@@ -6,10 +6,7 @@ import Buttom from '../components/Buttom';
 
 
 const Home = ({navigation}) => {
-
-  const apiKey = 'FuhLgm_4W8_uLmMOzrXyb4TBzhjtje2eGpKgEXbuNWwNAi4A1_F7pEZ6v8oV_7E_3W-uuoQ3DhNbd6enelbOdtbGjVuLlwZRVy5Crxy5SbWBIoK-tpt1cIYXVl2mZHYx';
-
-      const [lugar, setLugar] = useState(Data.places);
+    const [lugar, setLugar] = useState(Data.places);
 
     const handlePlacePress = (lugar) => {
         navigation.navigate('Details', { lugar });
@@ -19,14 +16,16 @@ const Home = ({navigation}) => {
     <View style={styles.container}>
       <FlatList
         data={lugar}
+        style={{padding:5}}
         renderItem={({item}) =>(
             <TouchableOpacity
-                style={styles.newsItem}
+                style={styles.card}
                 key={item.id}
                 onPress={() => navigation.navigate('Details', { newsItem: item })}
             >
                 <Image source={{ uri: item.image }} style={{ width: '100%', height: 200, borderRadius: 8 }}/>
                 <Text style={styles.title}>{item.name}</Text>
+                <Text style={styles.start}>{item.type}</Text>
             </TouchableOpacity>
             )}
         keyExtractor={(item) => item.id?.toString()}
@@ -35,7 +34,7 @@ const Home = ({navigation}) => {
         <Buttom
           styles={styles.button}
           text={'Add'}
-          onPress={console.log('hola')}
+          onPress={() => navigation.navigate('Add')}
         />
       </View>
     </View>
@@ -45,21 +44,44 @@ const Home = ({navigation}) => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#474747',
+      backgroundColor: '#252525',
     },
     container2: {
       position: 'absolute',
-      bottom: 16,
-      right: 16,
+      bottom: 50,
+      right: 30,
     },
     button: {
-      backgroundColor: 'blue',
+      backgroundColor: '#ab49cc',
       borderRadius: 30,
       width: 60,
       height: 60,
       justifyContent: 'center',
       alignItems: 'center',
     },
+    card:{
+      marginTop:5,
+      borderRadius: 6,
+      elevation: 3,
+      padding:10,
+      shadowOffset: {width: 1,height:1},
+      shadowColor: '#000',
+      shadowOpacity: 0.3,
+      shadowRadius: 2,
+      marginHorizontal: 4,
+      marginVertical: 6,
+    },
+    title:{
+      fontSize: 20,
+      marginTop:5,
+      marginLeft:5,
+      color: '#e0b0ff'
+    },
+    start:{
+      fontSize: 16,
+      marginTop:5,
+      marginLeft:5
+    }
 });
 
 export default Home;
