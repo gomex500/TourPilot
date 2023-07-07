@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {View, Text, FlatList, TouchableOpacity, StyleSheet, Image} from 'react-native'
 import Data from '../datos.json';
+import Buttom from '../components/Buttom';
 // import axios from 'axios';
 
 
@@ -30,11 +31,12 @@ const Home = ({navigation}) => {
             )}
         keyExtractor={(item) => item.id?.toString()}
      />
-     <View style={styles.container2}>
-      <TouchableOpacity style={styles.button}>
-        <Text>+</Text>
-      </TouchableOpacity>
-    </View>
+      <Buttom
+        stylesV={styles.container2}
+        stylesB={styles.button}
+        text={'Add'}
+        onPress={console.log('hola')}
+      />
 
     </View>
   );
