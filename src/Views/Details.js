@@ -26,8 +26,8 @@ const Details = () => {
             initialRegion={{
               latitude: origin.latitude,
               longitude: origin.longitude,
-              latitudeDelta: 0.0910,
-              longitudeDelta: 0.0410,
+              latitudeDelta: 0.009,
+              longitudeDelta: 0.009,
             }}
           >
             <Marker
@@ -63,15 +63,17 @@ const styles = StyleSheet.create({
     marginVertical: 6,
   },
   title:{
-    fontSize: 20,
+    fontSize: 21,
     marginTop:5,
     marginLeft:5,
-    color: '#f9f9f9'
+    color: '#e0b0ff'
   },
   par:{
     fontSize: 16,
-    margin:10,
-    marginLeft:5
+    marginTop:10,
+    marginLeft:5,
+    marginBottom:20,
+    color: '#f9f9f9',
   }
 });
 

@@ -24,8 +24,10 @@ const Home = ({navigation}) => {
                 onPress={() => navigation.navigate('Details', { newsItem: item })}
             >
                 <Image source={{ uri: item.image }} style={{ width: '100%', height: 200, borderRadius: 8 }}/>
-                <Text style={styles.title}>{item.name}</Text>
-                <Text style={styles.start}>{item.type}</Text>
+                <View style={styles.box}>
+                  <Text style={styles.title}>{item.name}</Text>
+                  <Text style={styles.start}>{item.type}</Text>
+                </View>
             </TouchableOpacity>
             )}
         keyExtractor={(item) => item.id?.toString()}
@@ -80,7 +82,14 @@ const styles = StyleSheet.create({
     start:{
       fontSize: 16,
       marginTop:5,
-      marginLeft:5
+      marginLeft:5,
+      color:'#f9f9f9'
+    },
+    box:{
+      flexDirection: 'row',
+      alignItems:'center',
+      justifyContent: 'space-between',
+      paddingRight: 20,
     }
 });
 

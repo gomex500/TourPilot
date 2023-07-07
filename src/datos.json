@@ -8,7 +8,7 @@
         "longitude": -85.311809,
         "start": 5,
         "image": "https://www.el19digital.com/files/articulos/199633.jpg",
-        "type":"Biniario Hotel Restaurante"
+        "type":"Balneario"
       },
       {
         "id":2,
@@ -18,14 +18,44 @@
         "longitude": -85.308513,
         "start": 5,
         "image": "https://www.canal4.com.ni/wp-content/uploads/2022/04/finca-los-angeles.jpg",
-        "type":"Biniario Hotel Restaurante"
+        "type":"Balneario"
       },
       {
         "id":3,
+        "name": "Poneloya",
+        "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
+        "latitude": 12.377753,
+        "longitude": -87.038638,
+        "start": 5,
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/0b/1c/69/playa-poneloya.jpg?w=1200&h=-1&s=1",
+        "type":"Playa"
+      },
+      {
+        "id":4,
+        "name": "Santa Clara",
+        "description": "The Eiffel Tower is a wrought-iron lattice tower located on the Champ de Mars in Paris, France.",
+        "latitude": 12.072896,
+        "longitude": -85.311809,
+        "start": 5,
+        "image": "https://www.el19digital.com/files/articulos/199633.jpg",
+        "type":"Balneario"
+      },
+      {
+        "id":5,
         "name": "Finca los Angeles",
         "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
         "latitude": 12.073578,
         "longitude": -85.308513,
+        "start": 5,
+        "image": "https://www.canal4.com.ni/wp-content/uploads/2022/04/finca-los-angeles.jpg",
+        "type":"Balneario"
+      },
+      {
+        "id":6,
+        "name": "Poneloya",
+        "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
+        "latitude": 12.377753,
+        "longitude": -87.038638,
         "start": 5,
         "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/0b/1c/69/playa-poneloya.jpg?w=1200&h=-1&s=1",
         "type":"Playa"
