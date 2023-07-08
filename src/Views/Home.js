@@ -35,6 +35,7 @@ const Home = ({navigation}) => {
       <View style={styles.container2}>
         <Buttom
           styles={styles.button}
+          stylesT={styles.textBtn}
           text={'Add'}
           onPress={() => navigation.navigate('Add')}
         />
@@ -90,6 +91,9 @@ const styles = StyleSheet.create({
       alignItems:'center',
       justifyContent: 'space-between',
       paddingRight: 20,
+    },
+    textBtn:{
+      color:'#f9f9f9'
     }
 });
 
