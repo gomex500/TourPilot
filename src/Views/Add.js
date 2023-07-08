@@ -1,9 +1,35 @@
-import React from "react";
-import {Text, View, StyleSheet, KeyboardAvoidingView} from 'react-native';
+import React, {useState} from "react";
+import {Text, View, StyleSheet, KeyboardAvoidingView, Alert} from 'react-native';
 import Buttom from "../components/Buttom";
 import Input from "../components/Input";
 
 const Add = () =>{
+    const [lugar, setLugar] = useState({
+        id:0,
+        name: "",
+        description: "",
+        latitude: 0,
+        longitude: 0,
+        image: "",
+        type:""
+    });
+
+
+    const obtenerDato = (key, value) => {
+        setLugar({ ...lugar, [key]: value });
+      };
+
+
+      const BtnAgregar = () => {
+          if (((lugar.name === ''||lugar.description === '')||(lugar.latitude < 1 || lugar.longitude < 1))
+          ||(lugar.image === '' || lugar.type === '')) {
+              Alert.alert("Algunos campos estan vacios")
+          } else {
+            Alert.alert("Lugar Agregado con Exito!")
+            console.log(lugar);
+          }
+      };
+
     return(
         <View style={styles.container}>
             <Text style={styles.title}>Agregar Lugar</Text>
@@ -13,16 +39,29 @@ const Add = () =>{
                     styles={styles.input}
                     ph={'Ingrese Nombre'}
                     type={"default"}
+                    fuc={(value) => obtenerDato("name", value)}
+                />
+            </View>
+            <View style={styles.box}>
+           <View>
+                <Text style={styles.label}>Foto del Lugar</Text>
+                <Input
+                    styles={styles.input2}
+                    ph={'Ingrese Ruta de Imagen'}
+                    type={"default"}
+                    fuc={(value) => obtenerDato("image", value)}
                 />
             </View>
             <View>
-                <Text style={styles.label}>Foto del Lugar</Text>
+                <Text style={styles.label}>Tipo de Lugar</Text>
                 <Input
-                    styles={styles.input}
-                    ph={'Ingrese Ruta de Imagen'}
+                    styles={styles.input2}
+                    ph={'Ingrese Tipo de Lugar'}
                     type={"default"}
+                    fuc={(value) => obtenerDato("type", value)}
                 />
             </View>
+           </View>
            <View style={styles.box}>
            <View>
                 <Text style={styles.label}>Latitud</Text>
@@ -30,6 +69,7 @@ const Add = () =>{
                     styles={styles.input2}
                     ph={'Ingrese Latitud'}
                     type={"numeric"}
+                    fuc={(value) => obtenerDato("latitude", parseInt(value))}
                 />
             </View>
             <View>
@@ -38,6 +78,7 @@ const Add = () =>{
                     styles={styles.input2}
                     ph={'Ingrese Longitud'}
                     type={"numeric"}
+                    fuc={(value) => obtenerDato("longitude", parseInt(value))}
                 />
             </View>
            </View>
@@ -49,13 +90,14 @@ const Add = () =>{
                     type={"default"}
                     ta={true}
                     nl={4}
+                    fuc={(value) => obtenerDato("description", value)}
                 />
             </View>
             <Buttom
                 styles={styles.btn}
                 text={'Agregar'}
                 stylesT={styles.textBtn}
-                onPress={console.log('hola')}
+                onPress={BtnAgregar}
             />
         </View>
     )
