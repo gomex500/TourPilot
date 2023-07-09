@@ -7,6 +7,7 @@ const DetailsRetos = ({navigation}) =>{
 
     const route = useRoute();
     const newsItem = route.params?.newsItem;
+    const type = newsItem.type;
 
   return (
     <View style={styles.container}>
@@ -14,13 +15,13 @@ const DetailsRetos = ({navigation}) =>{
         <Image source={{ uri: newsItem.image }} style={{ width: '100%', height: 200, borderRadius: 8 }} />
         <Text style={styles.title}>{newsItem.name}</Text>
         <Text style={styles.par}>{newsItem.description}</Text>
-      </View>
-      <Buttom
+        <Buttom
           styles={styles.btn}
           stylesT={styles.textBtn}
           text={'Buscar Lugar'}
-          onPress={() => navigation.navigate('Lugares Para el Reto')}
+          onPress={() => navigation.navigate('Lugares Para el Reto', {type})}
         />
+      </View>
     </View>
   );
 }
