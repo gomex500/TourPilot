@@ -7,11 +7,9 @@ const DetailsRetos = ({navigation}) =>{
 
     const route = useRoute();
     const newsItem = route.params?.newsItem;
-<<<<<<< HEAD
     const type = newsItem.type;
     const [pasos, setPasos] = useState(newsItem.pasos);
-=======
->>>>>>> 55197bdb35c52e069580f756575b44c1fd9c2e23
+
 
   return (
     <View style={styles.container}>
@@ -19,19 +17,14 @@ const DetailsRetos = ({navigation}) =>{
         <Image source={{ uri: newsItem.image }} style={{ width: '100%', height: 200, borderRadius: 8 }} />
         <Text style={styles.title}>{newsItem.name}</Text>
         <Text style={styles.par}>{newsItem.description}</Text>
-<<<<<<< HEAD
         <Text style={styles.caratT}>Pasos</Text>
         {
             pasos.map((item, index) => (
                 <Text style={styles.carat} key={index}>~ {item}</Text>
               ))
         }
-        <Buttom
-=======
-        <Text style={styles.par}>{newsItem.pasos}</Text>
       </View>
       <Buttom
->>>>>>> 55197bdb35c52e069580f756575b44c1fd9c2e23
           styles={styles.btn}
           stylesT={styles.textBtn}
           text={'Buscar Lugar'}
