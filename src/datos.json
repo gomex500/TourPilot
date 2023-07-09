@@ -29,21 +29,21 @@
       },
       {
         "id":4,
-        "name": "Santa Clara",
+        "name": "Zoologico Thomas Bell",
         "description": "The Eiffel Tower is a wrought-iron lattice tower located on the Champ de Mars in Paris, France.",
-        "latitude": 12.072896,
-        "longitude": -85.311809,
-        "image": "https://www.el19digital.com/files/articulos/199633.jpg",
-        "type":"Balneario"
+        "latitude": 12.099823,
+        "longitude": -85.360734,
+        "image": "https://www.visitanicaragua.com/wp-content/uploads/2021/08/Zoologico-Thomas-Belt.jpg",
+        "type":"Zoologico"
       },
       {
         "id":5,
-        "name": "Finca los Angeles",
+        "name": "Museo Gregorio Aguilar Barea",
         "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
         "latitude": 12.073578,
         "longitude": -85.308513,
         "image": "https://www.canal4.com.ni/wp-content/uploads/2022/04/finca-los-angeles.jpg",
-        "type":"Balneario"
+        "type":"Museo"
       },
       {
         "id":6,
