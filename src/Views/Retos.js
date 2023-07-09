@@ -22,6 +22,8 @@ const Retos = ({navigation}) =>{
                   <Text style={styles.start}>{item.type}</Text>
                 </View>
                 <Text style={styles.start}>{item.description}</Text>
+                <Text style={styles.start}>{item.pasos}</Text>
+
             </TouchableOpacity>
             )}
         keyExtractor={(item) => item.id?.toString()}
