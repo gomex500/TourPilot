@@ -61,6 +61,7 @@
         "id": 1,
         "name": "Sabana",
         "description": "Visita un Zoologico",
+        "pasos": ["ir al lugar marcado", "diviertete", "tomar foto de la entrada del zoologico", " dar clic en logrado"],
         "image":"https://th.bing.com/th/id/R.e69ac0c79216324527c416dd0fc9bab1?rik=ArVGDzBMu05B2A&riu=http%3a%2f%2fstatic9.depositphotos.com%2f1149843%2f1158%2fv%2f450%2fdepositphotos_11581928-African-savannah.jpg&ehk=so3IOHcJifkiVnx4X9JbuBGkQ2AVLCgdDkmksYUKebk%3d&risl=&pid=ImgRaw&r=0",
         "type":"Zoologico"
       },
@@ -69,6 +70,7 @@
         "id":2,
         "name": "Observador experto",
         "description": "Observa todos los animales del Zoologico",
+        "pasos": ["toma una foto al animal de tu preferencia ", " dar clic en logrado"],
         "image": "https://th.bing.com/th/id/R.716ebe96eadbcec94564511cdc100f42?rik=hV%2bWf2jcUjz4Xw&riu=http%3a%2f%2fclipart.coolclips.com%2f480%2fvectors%2ftf05339%2fCoolClips_vc089742.png&ehk=MOiSl22wPTBBAnyrsmh1RZ3DVKD9dr6W%2b97481FqKyc%3d&risl=&pid=ImgRaw&r=0",
         "type":"Zoologico"
       },
@@ -77,6 +79,7 @@
         "id":3,
         "name": "nadador olimpico",
         "description": "Nada mas de 50 Mt en la picina",
+        "pasos":  ["ir al lugar marcado", "diviertete", "tomar foto de la entrada del balneario", " dar clic en logrado"],
         "image": "https://th.bing.com/th/id/OIP.3YKqKuLNsBPMNKhLsp17HgHaEg?pid=ImgDet&rs=1",
         "type":"Balneario"
       },
@@ -84,8 +87,9 @@
       {
         "id":4,
         "name": "Maestro Acuatico",
-        "description": "Busea 30 seg en la pisina",
-        "image": "https://img.freepik.com/vector-premium/buzo-ilustracion-vector-oceano_559117-263.jpg"
+        "description": "Busea 30 seg como minimo en la pisina",
+        "pasos": ["mide el tiempo que tardas buseando", "dar clic en logrado"],
+        "image": "https://img.freepik.com/vector-premium/buzo-ilustracion-vector-oceano_559117-263.jpg",
         "type":"Balneario"
       }, 
 
@@ -93,6 +97,7 @@
         "id":5,
         "name": "Explorador Marino",
         "description": "Explora gran parte de la playa",
+        "pasos": ["ir a lugar deseado","explora la zona","tomar foto del lugar","dar clic en logrado"],
         "image": "https://img.freepik.com/vector-premium/caminar-playa-color-plano-mujer-sola-cerca-oceano-autocuidado-mujeres-resort-recreacion-personajes-dibujos-animados-2d-turistas-femeninos-paisaje-hawaii-fondo_151150-3148.jpg?w=1380",
         "type":"Playa"
       },
@@ -101,8 +106,28 @@
         "id":6,
         "name": "Fauna marina",
         "description": "Encuentra a una espesie animal en la playa",
+        "pasos": ["explora tus alrededores", "encuetra a algun animal", "tomar fotoa a la criatura", " dar clic en logrado"],
         "image": "https://www.memoriachilena.gob.cl/602/articles-70498_thumbnail.jpg",
         "type":"Playa"
+      }, 
+
+      {
+        "id":7,
+        "name": "Descubrimiento Historico",
+        "description": "Descubre un evento historico que desconoscas",
+        "pasos": ["asistir al lugar deceado", "descubre cosas nuevas en el museo", " dar clic en logrado"],
+        "image": "https://img.freepik.com/vector-premium/ilustracion-vector-plano-cazadores-tesoros-expedicion-arqueologica-investigacion-historica-estudiar-misterios-pasado-dos-hombres-caucasicos-cavando-personajes-dibujos-animados-pecho-viejo_106317-7656.jpg?w=1060",
+        "type":"Museo"
+      },
+
+      {
+        "id":8,
+        "name": "Arqueologo",
+        "description": "encuentra descubrimientos que fueron desenterrados",
+        "pasos": ["explora la zona", "busca artefactos que fueron desenterrados", "tomale foto al artefacto", " dar clic en logrado"],
+        "image": "https://www.memoriachilena.gob.cl/602/articles-70498_thumbnail.jpg",
+        "type":"Museo"
       }
+
     ]
 }
