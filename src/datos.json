@@ -4,6 +4,7 @@
         "id":1,
         "name": "Santa Clara",
         "description": "The Eiffel Tower is a wrought-iron lattice tower located on the Champ de Mars in Paris, France.",
+        "caracter": ["Balneario","Restaurante"],
         "latitude": 12.072896,
         "longitude": -85.311809,
         "image": "https://www.el19digital.com/files/articulos/199633.jpg",
@@ -13,6 +14,7 @@
         "id":2,
         "name": "Finca los Angeles",
         "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
+        "caracter": ["Balneario","Restaurante", "Hotel"],
         "latitude": 12.073578,
         "longitude": -85.308513,
         "image": "https://www.canal4.com.ni/wp-content/uploads/2022/04/finca-los-angeles.jpg",
@@ -22,6 +24,7 @@
         "id":3,
         "name": "Poneloya",
         "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
+        "caracter": ["Playa","Recreacion","Exploracion"],
         "latitude": 12.377753,
         "longitude": -87.038638,
         "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/0b/1c/69/playa-poneloya.jpg?w=1200&h=-1&s=1",
@@ -31,6 +34,7 @@
         "id":4,
         "name": "Zoologico Thomas Bell",
         "description": "The Eiffel Tower is a wrought-iron lattice tower located on the Champ de Mars in Paris, France.",
+        "caracter": ["zoologia","exploracion", "Fauna"],
         "latitude": 12.099823,
         "longitude": -85.360734,
         "image": "https://www.visitanicaragua.com/wp-content/uploads/2021/08/Zoologico-Thomas-Belt.jpg",
@@ -40,19 +44,33 @@
         "id":5,
         "name": "Museo Gregorio Aguilar Barea",
         "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
-        "latitude": 12.073578,
-        "longitude": -85.308513,
+        "caracter": ["Museo","Descubrimiento", "Cultura"],
+        "latitude": 12.107725,
+        "longitude": -85.363264,
         "image": "https://www.canal4.com.ni/wp-content/uploads/2022/04/finca-los-angeles.jpg",
         "type":"Museo"
       },
+
       {
         "id":6,
-        "name": "Poneloya",
+        "name": "Playa San Jorge",
         "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
+        "caracter": ["Playa","Recreacion","Exploracion"],
+        "latitude": 11.457164,
+        "longitude": -85.790767,
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPmtx8KJ6VmvqgdE4ArE8rlnSejOpOyVXLyi9Fd=w408-h306-k-no",
+        "type":"Playa"
+      },
+
+      {
+        "id":7,
+        "name": "Zoologico Nacional de Nicaragua",
+        "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
+        "caracter":  ["zoologia","exploracion", "Fauna"],
         "latitude": 12.377753,
         "longitude": -87.038638,
-        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/0b/1c/69/playa-poneloya.jpg?w=1200&h=-1&s=1",
-        "type":"Playa"
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNcYWPc4y4zGbJTRbNWgaCnO6D7X_IFa55tNCJA=w426-h240-k-no",
+        "type":"Zoologico"
       }
     ],
 
@@ -61,6 +79,7 @@
         "id": 1,
         "name": "Sabana",
         "description": "Visita un Zoologico",
+        "pasos": ["ir al lugar marcado", "diviertete", "tomar foto de la entrada del zoologico", " dar clic en logrado"],
         "image":"https://th.bing.com/th/id/R.e69ac0c79216324527c416dd0fc9bab1?rik=ArVGDzBMu05B2A&riu=http%3a%2f%2fstatic9.depositphotos.com%2f1149843%2f1158%2fv%2f450%2fdepositphotos_11581928-African-savannah.jpg&ehk=so3IOHcJifkiVnx4X9JbuBGkQ2AVLCgdDkmksYUKebk%3d&risl=&pid=ImgRaw&r=0",
         "type":"Zoologico"
       },
@@ -69,6 +88,7 @@
         "id":2,
         "name": "Observador experto",
         "description": "Observa todos los animales del Zoologico",
+        "pasos": ["toma una foto al animal de tu preferencia ", " dar clic en logrado"],
         "image": "https://th.bing.com/th/id/R.716ebe96eadbcec94564511cdc100f42?rik=hV%2bWf2jcUjz4Xw&riu=http%3a%2f%2fclipart.coolclips.com%2f480%2fvectors%2ftf05339%2fCoolClips_vc089742.png&ehk=MOiSl22wPTBBAnyrsmh1RZ3DVKD9dr6W%2b97481FqKyc%3d&risl=&pid=ImgRaw&r=0",
         "type":"Zoologico"
       },
@@ -77,6 +97,7 @@
         "id":3,
         "name": "nadador olimpico",
         "description": "Nada mas de 50 Mt en la picina",
+        "pasos":  ["ir al lugar marcado", "diviertete", "tomar foto de la entrada del balneario", " dar clic en logrado"],
         "image": "https://th.bing.com/th/id/OIP.3YKqKuLNsBPMNKhLsp17HgHaEg?pid=ImgDet&rs=1",
         "type":"Balneario"
       },
@@ -84,7 +105,12 @@
       {
         "id":4,
         "name": "Maestro Acuatico",
+<<<<<<< HEAD
         "description": "Busea 30 seg en la pisina",
+=======
+        "description": "Busea 30 seg como minimo en la pisina",
+        "pasos": ["mide el tiempo que tardas buseando", "dar clic en logrado"],
+>>>>>>> c119856061aeed017906c0aec398b6ca6df91501
         "image": "https://img.freepik.com/vector-premium/buzo-ilustracion-vector-oceano_559117-263.jpg",
         "type":"Balneario"
       }, 
@@ -93,6 +119,7 @@
         "id":5,
         "name": "Explorador Marino",
         "description": "Explora gran parte de la playa",
+        "pasos": ["ir a lugar deseado","explora la zona","tomar foto del lugar","dar clic en logrado"],
         "image": "https://img.freepik.com/vector-premium/caminar-playa-color-plano-mujer-sola-cerca-oceano-autocuidado-mujeres-resort-recreacion-personajes-dibujos-animados-2d-turistas-femeninos-paisaje-hawaii-fondo_151150-3148.jpg?w=1380",
         "type":"Playa"
       },
@@ -101,8 +128,28 @@
         "id":6,
         "name": "Fauna marina",
         "description": "Encuentra a una espesie animal en la playa",
+        "pasos": ["explora tus alrededores", "encuetra a algun animal", "tomar fotoa a la criatura", " dar clic en logrado"],
         "image": "https://www.memoriachilena.gob.cl/602/articles-70498_thumbnail.jpg",
         "type":"Playa"
+      }, 
+
+      {
+        "id":7,
+        "name": "Descubrimiento Historico",
+        "description": "Descubre un evento historico que desconoscas",
+        "pasos": ["asistir al lugar deceado", "descubre cosas nuevas en el museo", " dar clic en logrado"],
+        "image": "https://img.freepik.com/vector-premium/ilustracion-vector-plano-cazadores-tesoros-expedicion-arqueologica-investigacion-historica-estudiar-misterios-pasado-dos-hombres-caucasicos-cavando-personajes-dibujos-animados-pecho-viejo_106317-7656.jpg?w=1060",
+        "type":"Museo"
+      },
+
+      {
+        "id":8,
+        "name": "Arqueologo",
+        "description": "encuentra descubrimientos que fueron desenterrados",
+        "pasos": ["explora la zona", "busca artefactos que fueron desenterrados", "tomale foto al artefacto", " dar clic en logrado"],
+        "image": "https://www.crushpixel.com/big-static16/preview4/archaeologists-researching-ancient-sculpture-flat-2315202.jpg",
+        "type":"Museo"
       }
+
     ]
 }
