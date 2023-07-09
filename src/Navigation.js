@@ -18,12 +18,10 @@ const Navigation = () => {
         <Stack.Screen 
           name="TourPilot"
           component={Home}
-          options={(navigation)=>({
+          options={({ navigation }) => ({
             headerRight: () => (
-              <TouchableOpacity
-                onPress={() => navigation.navigate('Add')}
-              >
-                <Text style={{color:'#fff', marginRight: 20}}>Add</Text>
+              <TouchableOpacity onPress={() => navigation.navigate('Add')}>
+                <Text style={{ color: '#fff', marginRight: 20 }}>Add</Text>
               </TouchableOpacity>
             ),
             headerStyle: {

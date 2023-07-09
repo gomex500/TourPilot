@@ -12,7 +12,7 @@ const PlaceRetos = ({navigation}) =>{
     const [lugar, setLugar] = useState(Data.places);
     const [lugaresTipo, setLugaresTipo] = useState([]);
 
-    console.log(type); 
+    // console.log(type); 
 
     useEffect(() => {
         const lugaresFiltrados = lugar.filter((lugar) => lugar.type === type);
@@ -44,7 +44,7 @@ const PlaceRetos = ({navigation}) =>{
         <Buttom
           styles={styles.button}
           stylesT={styles.textBtn}
-          text={'Regresar'}
+          text={'Inicio'}
           onPress={() => navigation.navigate('TourPilot')}
         />
       </View>

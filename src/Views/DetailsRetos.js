@@ -23,13 +23,13 @@ const DetailsRetos = ({navigation}) =>{
                 <Text style={styles.carat} key={index}>~ {item}</Text>
               ))
         }
-      </View>
-      <Buttom
+        <Buttom
           styles={styles.btn}
           stylesT={styles.textBtn}
           text={'Buscar Lugar'}
-          onPress={() => navigation.navigate('Lugares Para el Reto')}
+          onPress={() => navigation.navigate('Lugares Para el Reto', {type})}
         />
+      </View>
     </View>
   );
 }
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         color: '#f9f9f9',
         textAlign: "center",
-        marginTop: 20
+        marginTop: 30
       },
       textBtn:{
           fontWeight: 'bold',
