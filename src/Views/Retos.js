@@ -1,48 +1,41 @@
-import React, { useState } from 'react';
+import React, {useState} from "react";
 import {View, Text, FlatList, TouchableOpacity, StyleSheet, Image} from 'react-native'
 import Data from '../datos.json';
 import Buttom from '../components/Buttom';
-// import axios from 'axios';
 
+const Retos = () =>{
+    const [retos, setRetos] = useState(Data.Retos);
 
-const Home = ({navigation}) => {
-    const [lugar, setLugar] = useState(Data.places);
-
-    const handlePlacePress = (lugar) => {
-        navigation.navigate('Details', { lugar });
+    const DetailsRetos = (retos) => {
+        navigation.navigate('DetailsRetos', { retos });
     };
 
-  return (
-    <View style={styles.container}>
+    return(
+        <View style={styles.container}>
       <FlatList
-        data={lugar}
+        data={retos}
         style={{padding:5}}
         renderItem={({item}) =>(
             <TouchableOpacity
                 style={styles.card}
                 key={item.id}
-                onPress={() => navigation.navigate('Details', { newsItem: item })}
+                onPress={() => navigation.navigate('DetailsRetos', { newsItem: item })}
             >
                 <Image source={{ uri: item.image }} style={{ width: '100%', height: 200, borderRadius: 8 }}/>
                 <View style={styles.box}>
                   <Text style={styles.title}>{item.name}</Text>
                   <Text style={styles.start}>{item.type}</Text>
                 </View>
+                <Text style={styles.start}>{item.description}</Text>
             </TouchableOpacity>
             )}
         keyExtractor={(item) => item.id?.toString()}
      />
       <View style={styles.container2}>
-        <Buttom
-          styles={styles.button}
-          stylesT={styles.textBtn}
-          text={'Retos'}
-          onPress={() => navigation.navigate('Retos')}
-        />
       </View>
     </View>
-  );
-};
+    );
+}
 
 const styles = StyleSheet.create({
     container: {
@@ -97,4 +90,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Home;
+export default Retos;
