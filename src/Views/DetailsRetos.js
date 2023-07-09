@@ -14,6 +14,7 @@ const DetailsRetos = ({navigation}) =>{
         <Image source={{ uri: newsItem.image }} style={{ width: '100%', height: 200, borderRadius: 8 }} />
         <Text style={styles.title}>{newsItem.name}</Text>
         <Text style={styles.par}>{newsItem.description}</Text>
+        <Text style={styles.par}>{newsItem.pasos}</Text>
       </View>
       <Buttom
           styles={styles.btn}

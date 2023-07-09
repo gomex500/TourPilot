@@ -64,7 +64,7 @@
 
       {
         "id":7,
-        "name": "Zoologico Nacional de Nicaragua",
+        "name": "Zoologico Nacional",
         "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
         "caracter":  ["zoologia","exploracion", "Fauna"],
         "latitude": 12.377753,
@@ -105,12 +105,8 @@
       {
         "id":4,
         "name": "Maestro Acuatico",
-<<<<<<< HEAD
-        "description": "Busea 30 seg en la pisina",
-=======
         "description": "Busea 30 seg como minimo en la pisina",
         "pasos": ["mide el tiempo que tardas buseando", "dar clic en logrado"],
->>>>>>> c119856061aeed017906c0aec398b6ca6df91501
         "image": "https://img.freepik.com/vector-premium/buzo-ilustracion-vector-oceano_559117-263.jpg",
         "type":"Balneario"
       }, 
@@ -137,7 +133,7 @@
         "id":7,
         "name": "Descubrimiento Historico",
         "description": "Descubre un evento historico que desconoscas",
-        "pasos": ["asistir al lugar deceado", "descubre cosas nuevas en el museo", " dar clic en logrado"],
+        "pasos": ["asistir al lugar deceado" ,"descubre cosas nuevas en el museo", " dar clic en logrado"],
         "image": "https://img.freepik.com/vector-premium/ilustracion-vector-plano-cazadores-tesoros-expedicion-arqueologica-investigacion-historica-estudiar-misterios-pasado-dos-hombres-caucasicos-cavando-personajes-dibujos-animados-pecho-viejo_106317-7656.jpg?w=1060",
         "type":"Museo"
       },
