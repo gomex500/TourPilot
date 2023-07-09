@@ -4,7 +4,6 @@ import { useRoute } from '@react-navigation/native';
 import MapView, { PROVIDER_GOOGLE, Polyline, Marker } from 'react-native-maps';
 
 const Details = () => {
-
     const route = useRoute();
     const newsItem = route.params?.newsItem;
 
@@ -13,12 +12,19 @@ const Details = () => {
       longitude: newsItem.longitude
     });
 
+    const [caracter, setCaracter] = useState(newsItem.caracter);
+
   return (
     <View style={styles.container}>
       <View style={styles.card}>
         <Image source={{ uri: newsItem.image }} style={{ width: '100%', height: 200, borderRadius: 8 }} />
         <Text style={styles.title}>{newsItem.name}</Text>
         <Text style={styles.par}>{newsItem.description}</Text>
+        <Text style={styles.caratT}>Caracteristicas</Text>
+          {caracter.map((item, index) => (
+          <Text style={styles.carat} key={index}>~ {item}</Text>
+        ))}
+
         <View>
           <MapView
             provider={PROVIDER_GOOGLE}
@@ -47,7 +53,8 @@ const styles = StyleSheet.create({
   },
   map: {
     width: '100%',
-    height: 300,
+    height: 200,
+    marginTop: 10
   },
   card:{
     flex:1,
@@ -72,7 +79,18 @@ const styles = StyleSheet.create({
     fontSize: 16,
     marginTop:10,
     marginLeft:5,
-    marginBottom:20,
+    color: '#f9f9f9',
+  },
+  caratT:{
+    fontSize: 18,
+    marginTop:10,
+    marginLeft:5,
+    color: '#e0b0ff',
+  },
+  carat:{
+    fontSize: 16,
+    marginTop:10,
+    marginLeft:5,
     color: '#f9f9f9',
   }
 });

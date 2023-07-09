@@ -8,6 +8,7 @@ const DetailsRetos = ({navigation}) =>{
     const route = useRoute();
     const newsItem = route.params?.newsItem;
     const type = newsItem.type;
+    const [pasos, setPasos] = useState(newsItem.pasos);
 
   return (
     <View style={styles.container}>
@@ -15,6 +16,12 @@ const DetailsRetos = ({navigation}) =>{
         <Image source={{ uri: newsItem.image }} style={{ width: '100%', height: 200, borderRadius: 8 }} />
         <Text style={styles.title}>{newsItem.name}</Text>
         <Text style={styles.par}>{newsItem.description}</Text>
+        <Text style={styles.caratT}>Pasos</Text>
+        {
+            pasos.map((item, index) => (
+                <Text style={styles.carat} key={index}>~ {item}</Text>
+              ))
+        }
         <Buttom
           styles={styles.btn}
           stylesT={styles.textBtn}
@@ -76,7 +83,19 @@ const styles = StyleSheet.create({
           fontWeight: 'bold',
           color: '#f9f9f9',
           textAlign: 'center'
-      }
+      },
+      carat:{
+        fontSize: 16,
+        marginTop:10,
+        marginLeft:5,
+        color: '#f9f9f9',
+      },
+      caratT:{
+        fontSize: 18,
+        marginTop:10,
+        marginLeft:5,
+        color: '#e0b0ff',
+      },
   });
 
 export default DetailsRetos;
