@@ -1,14 +1,9 @@
 import React, {useState} from "react";
 import {View, Text, FlatList, TouchableOpacity, StyleSheet, Image} from 'react-native'
 import Data from '../datos.json';
-import Buttom from '../components/Buttom';
 
-const Retos = () =>{
+const Retos = ({navigation}) =>{
     const [retos, setRetos] = useState(Data.Retos);
-
-    const DetailsRetos = (retos) => {
-        navigation.navigate('DetailsRetos', { retos });
-    };
 
     return(
         <View style={styles.container}>
@@ -19,7 +14,7 @@ const Retos = () =>{
             <TouchableOpacity
                 style={styles.card}
                 key={item.id}
-                onPress={() => navigation.navigate('DetailsRetos', { newsItem: item })}
+                onPress={() => navigation.navigate('Detalles del Reto', { newsItem: item })}
             >
                 <Image source={{ uri: item.image }} style={{ width: '100%', height: 200, borderRadius: 8 }}/>
                 <View style={styles.box}>

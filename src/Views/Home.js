@@ -8,10 +8,6 @@ import Buttom from '../components/Buttom';
 const Home = ({navigation}) => {
     const [lugar, setLugar] = useState(Data.places);
 
-    const handlePlacePress = (lugar) => {
-        navigation.navigate('Details', { lugar });
-    };
-
   return (
     <View style={styles.container}>
       <FlatList

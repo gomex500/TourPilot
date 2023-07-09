@@ -75,7 +75,7 @@ const Navigation = () => {
         <Stack.Screen
           name="Detalles del Reto"
           component={DetailsRetos}
-          options={{
+          options={({navigation}) => ({
             headerStyle: {
               backgroundColor: '#8e22bb',
             },
@@ -83,7 +83,7 @@ const Navigation = () => {
               color: '#fff',
               fontSize: 20
             }
-          }}
+          })}
         />
         <Stack.Screen
           name="Lugares Para el Reto"
