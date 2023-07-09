@@ -45,19 +45,32 @@
         "name": "Museo Gregorio Aguilar Barea",
         "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
         "caracter": ["Museo","Descubrimiento", "Cultura"],
-        "latitude": 12.073578,
-        "longitude": -85.308513,
+        "latitude": 12.107725,
+        "longitude": -85.363264,
         "image": "https://www.canal4.com.ni/wp-content/uploads/2022/04/finca-los-angeles.jpg",
         "type":"Museo"
       },
+
       {
         "id":6,
-        "name": "Poneloya",
+        "name": "Playa San Jorge",
         "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
+        "caracter": ["Playa","Recreacion","Exploracion"],
+        "latitude": 11.457164,
+        "longitude": -85.790767,
+        "image": "https://lh5.googleusercontent.com/p/AF1QipPmtx8KJ6VmvqgdE4ArE8rlnSejOpOyVXLyi9Fd=w408-h306-k-no",
+        "type":"Playa"
+      },
+
+      {
+        "id":7,
+        "name": "Zoologico Nacional de Nicaragua",
+        "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
+        "caracter":  ["zoologia","exploracion", "Fauna"],
         "latitude": 12.377753,
         "longitude": -87.038638,
-        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/0b/1c/69/playa-poneloya.jpg?w=1200&h=-1&s=1",
-        "type":"Playa"
+        "image": "https://lh5.googleusercontent.com/p/AF1QipNcYWPc4y4zGbJTRbNWgaCnO6D7X_IFa55tNCJA=w426-h240-k-no",
+        "type":"Zoologico"
       }
     ],
 
@@ -130,7 +143,7 @@
         "name": "Arqueologo",
         "description": "encuentra descubrimientos que fueron desenterrados",
         "pasos": ["explora la zona", "busca artefactos que fueron desenterrados", "tomale foto al artefacto", " dar clic en logrado"],
-        "image": "https://www.memoriachilena.gob.cl/602/articles-70498_thumbnail.jpg",
+        "image": "https://www.crushpixel.com/big-static16/preview4/archaeologists-researching-ancient-sculpture-flat-2315202.jpg",
         "type":"Museo"
       }
 
