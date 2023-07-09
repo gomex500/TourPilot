@@ -58,7 +58,7 @@
     "Retos": [
       {
         "id": 1,
-        "nombre": "Zabana",
+        "name": "Zabana",
         "description": "Visita un Zoologico",
         "image":"https://img.freepik.com/vector-gratis/fondo-paisaje-bosque-africano_1308-59144.jpg?w=2000",
         "type":"Zoologico"

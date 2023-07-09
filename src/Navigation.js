@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import {TouchableOpacity, Text} from 'react-native';
 import Home from './Views/Home'
 import Details from './Views/Details';
 import Add from './Views/Add';
@@ -18,6 +19,11 @@ const Navigation = () => {
           name="TourPilot"
           component={Home}
           options={{
+            headerRight: () => (
+              <TouchableOpacity>
+                <Text style={{color:'#fff', marginRight: 20}}>Add</Text>
+              </TouchableOpacity>
+            ),
             headerStyle: {
               backgroundColor: '#8e22bb',
             },
