@@ -18,9 +18,11 @@ const Navigation = () => {
         <Stack.Screen 
           name="TourPilot"
           component={Home}
-          options={{
+          options={(navigation)=>({
             headerRight: () => (
-              <TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => navigation.navigate('Add')}
+              >
                 <Text style={{color:'#fff', marginRight: 20}}>Add</Text>
               </TouchableOpacity>
             ),
@@ -31,7 +33,7 @@ const Navigation = () => {
               color: '#fff',
               fontSize: 20
             }
-          }}
+          })}
         />
         <Stack.Screen
           name="Details"

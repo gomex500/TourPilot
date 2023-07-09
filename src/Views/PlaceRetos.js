@@ -1,16 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import {View, Text, FlatList, TouchableOpacity, StyleSheet, Image} from 'react-native';
+import { useRoute } from '@react-navigation/native';
 import Buttom from '../components/Buttom';
 import Data from '../datos.json';
 
 const PlaceRetos = ({navigation}) =>{
+    
+    const route = useRoute();
+    const {type} = route.params;
 
+    const [lugar, setLugar] = useState(Data.places);
     const [lugaresTipo, setLugaresTipo] = useState([]);
 
-    const tipoDeseado = 'playa'; // Reemplaza 'playa' con el tipo que deseas obtener
+    console.log(type); 
 
     useEffect(() => {
-        const lugaresFiltrados = Data.filter(lugar => lugar.tipo === tipoDeseado);
+        const lugaresFiltrados = lugar.filter((lugar) => lugar.type === type);
         setLugaresTipo(lugaresFiltrados);
     }, []);
 

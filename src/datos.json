@@ -47,7 +47,7 @@
         "caracter": ["Museo","Descubrimiento", "Cultura"],
         "latitude": 12.107725,
         "longitude": -85.363264,
-        "image": "https://www.canal4.com.ni/wp-content/uploads/2022/04/finca-los-angeles.jpg",
+        "image": "https://lh5.googleusercontent.com/p/AF1QipN5XmcbBxRtGjp-VfJdIRJ68COTxuCiMh_SOkdj=w408-h408-k-no",
         "type":"Museo"
       },
 
@@ -67,8 +67,8 @@
         "name": "Zoologico Nacional",
         "description": "The Great Wall of China is a series of fortifications that were built across the historical northern borders of ancient Chinese states.",
         "caracter":  ["zoologia","exploracion", "Fauna"],
-        "latitude": 12.377753,
-        "longitude": -87.038638,
+        "latitude": 12.040637,
+        "longitude": -86.193058,
         "image": "https://lh5.googleusercontent.com/p/AF1QipNcYWPc4y4zGbJTRbNWgaCnO6D7X_IFa55tNCJA=w426-h240-k-no",
         "type":"Zoologico"
       }
