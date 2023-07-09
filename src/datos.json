@@ -54,5 +54,14 @@
         "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/0b/1c/69/playa-poneloya.jpg?w=1200&h=-1&s=1",
         "type":"Playa"
       }
+    ],
+    "Retos": [
+      {
+        "id": 1,
+        "nombre": "Zabana",
+        "description": "Visita un Zoologico",
+        "image":"https://img.freepik.com/vector-gratis/fondo-paisaje-bosque-africano_1308-59144.jpg?w=2000",
+        "type":"Zoologico"
+      }
     ]
 }
