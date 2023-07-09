@@ -55,13 +55,38 @@
         "type":"Playa"
       }
     ],
+
     "Retos": [
       {
         "id": 1,
         "name": "Zabana",
         "description": "Visita un Zoologico",
-        "image":"https://img.freepik.com/vector-gratis/fondo-paisaje-bosque-africano_1308-59144.jpg?w=2000",
+        "image":"https://th.bing.com/th/id/R.e69ac0c79216324527c416dd0fc9bab1?rik=ArVGDzBMu05B2A&riu=http%3a%2f%2fstatic9.depositphotos.com%2f1149843%2f1158%2fv%2f450%2fdepositphotos_11581928-African-savannah.jpg&ehk=so3IOHcJifkiVnx4X9JbuBGkQ2AVLCgdDkmksYUKebk%3d&risl=&pid=ImgRaw&r=0",
         "type":"Zoologico"
+      },
+      
+      {
+        "id":2,
+        "name": "Observador experto",
+        "description": "Observa todos los animales del Zoologico",
+        "image": "https://th.bing.com/th/id/R.716ebe96eadbcec94564511cdc100f42?rik=hV%2bWf2jcUjz4Xw&riu=http%3a%2f%2fclipart.coolclips.com%2f480%2fvectors%2ftf05339%2fCoolClips_vc089742.png&ehk=MOiSl22wPTBBAnyrsmh1RZ3DVKD9dr6W%2b97481FqKyc%3d&risl=&pid=ImgRaw&r=0",
+        "type":"Zoologico"
+      },
+
+      {
+        "id":3,
+        "name": "nadador olimpico",
+        "description": "Nada mas de 50 Mt en la picina",
+        "image": "https://th.bing.com/th/id/OIP.3YKqKuLNsBPMNKhLsp17HgHaEg?pid=ImgDet&rs=1",
+        "type":"Balneario"
+      },
+
+      {
+        "id":4,
+        "name": "Maestro Acuatico",
+        "description": "Nada mas de 50 Mt en la picina",
+        "image": "https://th.bing.com/th/id/OIP.3YKqKuLNsBPMNKhLsp17HgHaEg?pid=ImgDet&rs=1",
+        "type":"Balneario"
       }
     ]
 }
