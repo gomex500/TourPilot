@@ -4,7 +4,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from './Views/Home'
 import Details from './Views/Details';
 import Add from './Views/Add';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+import Retos from './Views/Retos';
+import PlaceRetos from './Views/PlaceRetos';
+import DetailsRetos from './Views/DetailsRetos';
 
 const Stack = createStackNavigator();
 
@@ -41,6 +43,45 @@ const Navigation = () => {
         <Stack.Screen
           name="Add"
           component={Add}
+          options={{
+            headerStyle: {
+              backgroundColor: '#8e22bb',
+            },
+            headerTitleStyle: {
+              color: '#fff',
+              fontSize: 20
+            }
+          }}
+        />
+        <Stack.Screen
+          name="Retos"
+          component={Retos}
+          options={{
+            headerStyle: {
+              backgroundColor: '#8e22bb',
+            },
+            headerTitleStyle: {
+              color: '#fff',
+              fontSize: 20
+            }
+          }}
+        />
+        <Stack.Screen
+          name="Detalles del Reto"
+          component={DetailsRetos}
+          options={{
+            headerStyle: {
+              backgroundColor: '#8e22bb',
+            },
+            headerTitleStyle: {
+              color: '#fff',
+              fontSize: 20
+            }
+          }}
+        />
+        <Stack.Screen
+          name="Lugares Para el Reto"
+          component={PlaceRetos}
           options={{
             headerStyle: {
               backgroundColor: '#8e22bb',
